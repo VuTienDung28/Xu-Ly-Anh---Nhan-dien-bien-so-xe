@@ -34,4 +34,5 @@ class KNN_Model:
         
         # Dự đoán (K=3)
         retval, results, neigh_resp, dists = self.model.findNearest(roi_flat, k=3)
+
         return str(chr(int(results[0][0])))
